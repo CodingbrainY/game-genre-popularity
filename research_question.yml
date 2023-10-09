@@ -1,0 +1,72 @@
+# This file is in YAML format.  You must ensure that the punctuation
+# and whitespace is preserved.  Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Jesney Elizabath Johny, Pratik Patil, Sai Vamshi Krishna Sarala, Aakash Khade, Yash Nitin Nagarkar]
+
+# Write your general topic.  
+topic: Games Popularity
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: Is there a mean difference between genres and game popularity?
+
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There is no mean difference between genres and game popularity.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There is mean difference between genres and game popularity.
+
+# Write the dataset URL.  Be sure it has the allowed hostname.
+dataset-url: "https://data.world/craigkelly/steam-game-data/workspace/file?filename=games-features.csv"
+
+# Paste the output of loading your dataset into R, and executing the
+# colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+columns: |
+  > data = read.csv("DATASET.csv")
+  > colnames(data)
+  [1] "QueryID"                     "ResponseID"                 
+  [3] "QueryName"                   "ResponseName"               
+  [5] "ReleaseDate"                 "RequiredAge"                
+  [7] "DemoCount"                   "DeveloperCount"             
+  [9] "DLCCount"                    "Metacritic"                 
+  [11] "MovieCount"                  "PackageCount"               
+  [13] "RecommendationCount"         "PublisherCount"             
+  [15] "ScreenshotCount"             "SteamSpyOwners"             
+  [17] "SteamSpyOwnersVariance"      "SteamSpyPlayersEstimate"    
+  [19] "SteamSpyPlayersVariance"     "AchievementCount"           
+  [21] "AchievementHighlightedCount" "ControllerSupport"          
+  [23] "IsFree"                      "FreeVerAvail"               
+  [25] "PurchaseAvail"               "SubscriptionAvail"          
+  [27] "PlatformWindows"             "PlatformLinux"              
+  [29] "PlatformMac"                 "PCReqsHaveMin"              
+  [31] "PCReqsHaveRec"               "LinuxReqsHaveMin"           
+  [33] "LinuxReqsHaveRec"            "MacReqsHaveMin"             
+  [35] "MacReqsHaveRec"              "CategorySinglePlayer"       
+  [37] "CategoryMultiplayer"         "CategoryCoop"               
+  [39] "CategoryMMO"                 "CategoryInAppPurchase"      
+  [41] "CategoryIncludeSrcSDK"       "CategoryIncludeLevelEditor" 
+  [43] "CategoryVRSupport"           "GenreIsNonGame"             
+  [45] "GenreIsIndie"                "GenreIsAction"              
+  [47] "GenreIsAdventure"            "GenreIsCasual"              
+  [49] "GenreIsStrategy"             "GenreIsRPG"                 
+  [51] "GenreIsSimulation"           "GenreIsEarlyAccess"         
+  [53] "GenreIsFreeToPlay"           "GenreIsSports"              
+  [55] "GenreIsRacing"               "GenreIsMassivelyMultiplayer"
+  [57] "PriceCurrency"               "PriceInitial"               
+  [59] "PriceFinal"                  "SupportEmail"               
+  [61] "SupportURL"                  "AboutText"                  
+  [63] "Background"                  "ShortDescrip"               
+  [65] "DetailedDescrip"             "DRMNotice"                  
+  [67] "ExtUserAcctNotice"           "HeaderImage"                
+  [69] "LegalNotice"                 "Reviews"                    
+  [71] "SupportedLanguages"          "Website"                    
+  [73] "PCMinReqsText"               "PCRecReqsText"              
+  [75] "LinuxMinReqsText"            "LinuxRecReqsText"           
+  [77] "MacMinReqsText"              "MacRecReqsText"             
+    

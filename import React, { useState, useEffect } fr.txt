@@ -1,0 +1,22 @@
+import React, { useState, useEffect } from 'react';
+
+
+function FlashingWord({ word }) {
+  const [displayedWord, setDisplayedWord] = useState('');
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      if (currentIndex >= word.length) {
+        clearInterval(intervalId);
+        return;
+      }
+      setDisplayedWord((prev) => prev + word[currentIndex]);
+      currentIndex++;
+    }, 500);
+
+    return () => clearInterval(intervalId);
+  }, [word]);
+
+  return <span>{displayedWord}</span>;
+}

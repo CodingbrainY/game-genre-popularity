@@ -1,0 +1,19 @@
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+✔ ggplot2 3.3.5     ✔ purrr   0.3.4
+✔ tibble  3.1.6     ✔ dplyr   1.0.7
+✔ tidyr   1.1.4     ✔ stringr 1.4.0
+✔ readr   2.1.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Rows: 13357 Columns: 78
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (23): QueryName, ResponseName, ReleaseDate, PriceCurrency, SupportEmail,...
+dbl (20): QueryID, ResponseID, RequiredAge, DemoCount, DeveloperCount, DLCCo...
+lgl (35): ControllerSupport, IsFree, FreeVerAvail, PurchaseAvail, Subscripti...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+null device 
+          1 
